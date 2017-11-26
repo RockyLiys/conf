@@ -1,0 +1,2 @@
+# 查看Linux所有用户
+cat /etc/passwd|grep -v nologin|grep -v halt|grep -v shutdown|awk -F":" '{ print ("|"{"|"{})}'|more}
